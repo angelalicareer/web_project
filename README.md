@@ -1,7 +1,7 @@
 # web_project
 Tddddd
 
-## :computer: [https://glacial-journey-81282.herokuapp.com/](#) to see my live project!
+## :computer: [click here](https://glacial-journey-81282.herokuapp.com/) to see my live project!
 
 ## :page_facing_up: About
 - How to use my awesome project.
@@ -17,7 +17,7 @@ $ node app.js
 - Talk about approach to the problem.
 - Add screenshots/drawings of doodles/plans during the planning phase.
 - Flow charts of app logic.
-![Wireframing](https://drive.google.com/file/d/1P3ZXaCJ7QySZ8Sts3OZrAopwYYsiKolD/view?usp=sharing;https://drive.google.com/file/d/1SLvFbBaDhLAdqYwr5SOb6pe_pVx497fO/view?usp=sharing)
+![Wireframing](https://drive.google.com/file/d/15ozn0tLjdCSN2bv7XXVpHb_HrZGd6-vO/view?usp=sharing)
 
 ## :rocket: Cool tech
 - Programming languages
