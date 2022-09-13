@@ -1,5 +1,6 @@
+require './models/user'
 get '/clients' do
-    erb :'clients'
+    erb :'/arts/client'
 end
 
 post '/users' do
@@ -12,4 +13,7 @@ post '/users' do
         erb :'/log_in', locals: {
             name:name
         }
+        else
+            redirect '/clients'
     end
+end

@@ -1,14 +1,14 @@
-<header>
-    <h1>
-        <a href="/">HOME</a>
-        <a href="/work">WORK</a>
-        <a href="/clients">CLIENTS</a> 
-        <span>ABOUT</span>
-        <span>SERVICES</span>
-        <span>CONTACT</span>
-    </h1>
-</header>
 <main>
+<section>
 <h1>CASE STUDIES</h1>
+<% cases.each do |c|%>
+    <div>
+    <img src='<%= c['image_url']%>'>
+    <h1><%= c['name']%></h1>
+    </div>
+<% end %>
+</section>
+<section>
 <h1>WEB DESIGN</h1>
+</section>
 </main>
