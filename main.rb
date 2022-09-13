@@ -8,17 +8,16 @@ require './controllers/arts_controller'
 require './controllers/clients_controller'
 require './controllers/users_controller'
 get '/about' do
-  erb: 'arts/about'
+  erb :'arts/about'
 end
 
 get '/services' do
-  erb: 'arts/service'
+  erb :'arts/service'
 end
 
 get '/contact' do
-  erb: 'arts/contact'
+  erb :'arts/contact'
 end
-
 
 get '/' do
   erb :'arts/index'
