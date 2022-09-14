@@ -5,20 +5,23 @@ require 'dotenv/load'
 require './db/db'
 
 require './controllers/arts_controller'
-require './controllers/clients_controller'
+require './controllers/sessions_controller'
 require './controllers/users_controller'
+
+enable :sessions
+
 get '/about' do
-  erb :'arts/about'
+  erb :'about'
 end
 
 get '/services' do
-  erb :'arts/service'
+  erb :'service'
 end
 
 get '/contact' do
-  erb :'arts/contact'
+  erb :'contact'
 end
 
 get '/' do
-  erb :'arts/index'
+  erb :'index'
 end
