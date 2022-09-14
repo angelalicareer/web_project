@@ -8,43 +8,47 @@
 }
 
 .logo img {
+    margin-top: -25px;
     width: auto;
-    height: 50px;
+    height: 80px;
 }
 
 a:link {
     text-decoration: none;
+    color: inherit;
 }
 
 a:visited {
     text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
     text-decoration: none;
+    color: inherit;
 }
 
 a:active {
     text-decoration: none;
+    color: inherit;
 }
 
 body {
     background-color: rgb(253, 245, 223);
     color: rgb(134, 115, 63);
-    max-width: 1500px;
     margin: auto;
 }
 
 header {
     text-align: center;
     display: grid;
-    margin: 30px;
+    margin: 50px 30px 20px 30px;
     grid-template-columns: repeat(7, 1fr);
     font-size: 25px;
 }
 
 main {
-    margin-top: 50px;
+    margin: 50px;
 }
 
 .main-header {
@@ -52,7 +56,13 @@ main {
 }
 
 .main-header h1 {
-    font-size: 40px;
+    font-size: 60px;
+}
+
+.work-grid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .work h1 {
@@ -66,8 +76,8 @@ main {
 }
 
 .work-image img {
-    width: 400px;
-    height: 500px;
+    width: 80%;
+    height: 80%;
     margin: 10px;
     object-fit: cover;
 }
@@ -81,8 +91,8 @@ main {
     right: 0;
     top: 0%;
     text-align: center;
-    width: 400px;
-    height: 500px;
+    width: 350px;
+    height: 450px;
     background-color: rgba(128, 128, 128, 0.6);
 }
 
@@ -92,9 +102,153 @@ main {
 
 .services {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    margin-bottom: 50px;
 }
 
 .services div {
     margin: 0 50px;
+}
+
+.services img {
+    height: 80px;
+    width: auto;
+}
+
+.services h2 {
+    display: inline-block;
+    font-size: 40px;
+}
+
+.services h3 {
+    margin: auto;
+}
+
+.contact h1 {
+    font-size: 50px;
+}
+
+.contact-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-control label {
+    font-size: 1.4em;
+}
+
+.contact-control input {
+    display: block;
+    width: 95%;
+    height: 40px;
+    margin: 20px 0;
+}
+
+.contact-control textarea {
+    display: block;
+    width: 98%;
+    height: 150px;
+    margin: 20px 0;
+}
+
+.contact button {
+    height: 50px;
+    width: 120px;
+    font-size: 1.5em;
+    background-color: rgb(253, 245, 223);
+    border: 1px solid rgb(99, 99, 99);
+    color: inherit;
+}
+
+.contact form {
+    margin-top: 60px;
+}
+
+.requirements {
+    margin: 10px;
+}
+
+.requirements button {
+    height: 40px;
+    width: 100px;
+    background-color: rgb(253, 245, 223);
+    border: 1px solid rgb(99, 99, 99);
+    color: inherit;
+}
+
+.requirements a {
+    height: 40px;
+    width: 100px;
+    padding: 9px;
+    background-color: rgb(253, 245, 223);
+    border: 1px solid rgb(99, 99, 99);
+    color: inherit;
+}
+
+.requirements input {
+    height: 40px;
+    min-width: 800px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.projects img {
+    width: 350px;
+    height: 450px;
+    margin: 10px;
+    object-fit: fill;
+}
+
+.project-title {
+    text-align: center;
+}
+
+@keyframes fadeAndScale {
+    from {
+        opacity: 0;
+        transform: scale(0.5, 0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+#owner {
+    font-size: 100px;
+    animation-name: fadeAndScale;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.71, 0.55, 0.62, 1.57);
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.home-main {
+    min-height: 800px;
+    height: 100%;
+    background-image: url("/images/background.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#profile {
+    text-align: center;
+}
+
+#profile img {
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+#computer {
+    padding: 12px;
 }

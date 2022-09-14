@@ -1,1 +1,33 @@
-<h1>Lets work together</h1>
+<main class="contact">
+    <h1>Lets work together</h1>
+    <% if submitted %>
+    <h3>I have received your message and will get back to you ASAP.</h3>
+    <% else %>
+    <h3>Should you want to contact me, please feel free to leave me a message via this form.</h3>
+    <% end %>
+    <form action="/contact/submit" method="POST">
+        <div class="contact-group">
+            <div class="contact-control">
+                <label for="name">Name*</label>
+                <input type="text">
+            </div>
+            <div class="contact-control">
+                <label for="email">Email*</label>
+                <input type="text">
+            </div>
+            <div class="contact-control">
+                <label for="phone">Phone Number</label>
+                <input type="text">
+            </div>
+            <div class="contact-control">
+                <label for="about">What's this about?*</label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="contact-control">
+            <label for="message">Message*</label>
+            <textarea type="text"></textarea>
+        </div>
+        <button>SUBMIT</button>
+    </form>
+</main>

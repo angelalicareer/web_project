@@ -23,8 +23,20 @@ CREATE TABLE users(
   password_digest TEXT
 );
 
-INSERT INTO graphic_design(name, image_url)
-VALUES('Tacos', 'https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+CREATE TABLE requirements(
+  id SERIAL PRIMARY KEY,
+  userid INTEGER,
+  description TEXT
+);
 
-INSERT INTO graphic_design(name, image_url)
-VALUES('Burger', 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=699&q=80');
+INSERT INTO graphic_design (name, image_url)
+VALUES ('Graphic 1', '/images/graphic1.jpg'),
+('Graphic 2', '/images/graphic2.png'),
+('Graphic 3', '/images/graphic3.png'),
+('Graphic 4', '/images/project2.png');
+
+INSERT INTO web_design (name, image_url)
+VALUES ('Web 1', '/images/web1.png'),
+('Web 2', '/images/web2.png'),
+('Web 3', '/images/web3.png'),
+('Web 4', '/images/web4.png');

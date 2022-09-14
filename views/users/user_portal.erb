@@ -6,23 +6,32 @@
             <% projects.each do |p|%>
                 <div>
                     <img src="<%= p['image']%>" alt="">
-                    <h3><%= p['name']%></h3>
+                    <h3 class="project-title"><%= p['name']%></h3>
                 </div>
             <% end %>
         </div>
     </div>
     <div>
         <div>
-            <h3>Our project's process is </h3>
-        </div>
-        <div>
-            <h3>Requirment</h3>
-        </div>
-            <div>
-        <h3>Concept</h3>
-            </div>
-        <div>
-            <h3>Refined design</h3>
+            <h2>Requirments</h2>
+            <ul>
+                <% requirements.each do |r|%>
+                    <form action="/requirements/<%= r['id'] %>/update" method="POST">
+                        <div class="requirements">
+                            <input type="text" value="<%= r['description']%>" name="description">
+                            <button>Update</button>
+                            <a href="/requirements/<%= r['id'] %>/delete">Delete</a>
+                        </div>
+                    </form>
+                <% end %>
+            </ul>
+            <form action="/requirements/add" method="POST">
+                <div class="requirements">
+                    <h3>New requirement</h3>
+                    <input type="text" name="description">
+                    <button>Add</button>
+                </div>
+            </form>
         </div>
     </div>
 </main>

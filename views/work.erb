@@ -2,26 +2,30 @@
     <section>
         <h1>GRAPHIC DESIGN</h1>
         <hr>
-        <% graphic.each do |c|%>
+        <div class="work-grid">
+            <% graphic.each do |c|%>
             <div class="work-image">
-                <img src='<%= c['image_url']%>'>
+                <img class="scroller" src='<%= c['image_url']%>'>
                 <div class='work-mask'>
                     <h2><%= c['name']%></h2>
                 </div>
             </div>
-        <% end %>
+            <% end %>
+        </div>
     </section>
     <hr>
     <section>
         <h1>WEB DESIGN</h1>
         <hr>
-        <% web.each do |w|%>
+        <div class="work-grid">
+            <% web.each do |w|%>
             <div class="work-image">
                 <img src='<%= w['image_url']%>'>
                 <div class='work-mask'>
                     <h2><%= w['name']%></h2>
                 </div>
             </div>
-        <% end %>
+            <% end %>
+        </div>
     </section>
 </main>

@@ -18,8 +18,18 @@ get '/services' do
   erb :'service'
 end
 
-get '/contact' do
-  erb :'contact'
+get '/contact/:id' do
+  submitted = false
+  if params['id'] && params['id'] != '0'
+    submitted = true
+  end
+  erb :'contact', locals: {
+    submitted: submitted
+  }
+end
+
+post '/contact/submit' do 
+  redirect '/contact/1'
 end
 
 get '/' do
