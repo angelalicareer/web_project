@@ -79,7 +79,7 @@ main {
     opacity: 1;
 }
 
-add .work-image img {
+.work-image img {
     width: 100%;
     height: 100%;
     padding: 15px;
