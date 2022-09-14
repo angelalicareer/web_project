@@ -17,7 +17,8 @@ $ node app.js
 - Talk about approach to the problem.
 - Add screenshots/drawings of doodles/plans during the planning phase.
 - Flow charts of app logic.
-![Wireframing](https://drive.google.com/file/d/1pkRjhPSKvG3yj4k0lkeAI3NHq45yOySf/view?usp=sharing)
+<img width="419" alt="Screenshot 2022-09-14 092504" src="https://user-images.githubusercontent.com/110880945/190031863-136d39b9-1719-4b37-a3fe-0f1c92d40ffd.png">
+
 
 ## :rocket: Cool tech
 - Programming languages
