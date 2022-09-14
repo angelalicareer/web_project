@@ -2,10 +2,7 @@ require './models/user'
 
 get '/users/user_welcome' do
     if session['user_id']
-        user = find_user_by_id(session['user_id'])
-        erb :'/users/user_portal', locals: {
-            name: user['first_name']
-        }
+        redirect "/users/#{session['user_id']}"
     else
         erb :'/sessions/user_welcome'
     end
@@ -13,6 +10,16 @@ end
 
 get '/users/new' do
     erb :'/users/sign_up'
+end
+
+get '/users/:id' do
+    id = params['id']
+    user = find_user_by_id(id)
+    projects = [{"name"=>"Project 1", "image"=>""},{"name"=>"Project 2", "image"=>""},{"name"=>"Project 3", "image"=>""}]
+    erb :'/users/user_portal', locals: {
+        name: user['first_name'],
+        projects: projects
+    }
 end
 
 post '/users/sign_up' do
@@ -31,12 +38,9 @@ post '/users/login' do
     email =params['email']
     password = params['password']
     user = find_user_by_email(email)
-
     if user && BCrypt::Password.new(user['password_digest']) == password 
         session['user_id'] = user['id']
-        erb :'/users/user_portal', locals: {
-            name: user['first_name']
-        }
+        redirect "/users/#{session['user_id']}"
     else
         redirect '/users/user_welcome'
     end

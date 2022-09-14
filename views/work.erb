@@ -1,14 +1,27 @@
-<main>
-<section>
-<h1>CASE STUDIES</h1>
-<% cases.each do |c|%>
-    <div>
-    <img src='<%= c['image_url']%>'>
-    <h1><%= c['name']%></h1>
-    </div>
-<% end %>
-</section>
-<section>
-<h1>WEB DESIGN</h1>
-</section>
+<main class="work">
+    <section>
+        <h1>GRAPHIC DESIGN</h1>
+        <hr>
+        <% graphic.each do |c|%>
+            <div class="work-image">
+                <img src='<%= c['image_url']%>'>
+                <div class='work-mask'>
+                    <h2><%= c['name']%></h2>
+                </div>
+            </div>
+        <% end %>
+    </section>
+    <hr>
+    <section>
+        <h1>WEB DESIGN</h1>
+        <hr>
+        <% web.each do |w|%>
+            <div class="work-image">
+                <img src='<%= w['image_url']%>'>
+                <div class='work-mask'>
+                    <h2><%= w['name']%></h2>
+                </div>
+            </div>
+        <% end %>
+    </section>
 </main>

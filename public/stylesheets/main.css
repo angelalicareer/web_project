@@ -1,18 +1,100 @@
 * {
     box-sizing: border-box;
-  }
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: auto;
+    height: 50px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
 
 body {
     background-color: rgb(253, 245, 223);
-    color: rgb(134,115,63);
+    color: rgb(134, 115, 63);
+    max-width: 1500px;
+    margin: auto;
 }
-  
+
 header {
     text-align: center;
     display: grid;
+    margin: 30px;
     grid-template-columns: repeat(7, 1fr);
+    font-size: 25px;
 }
 
-.home-main {
+main {
+    margin-top: 50px;
+}
+
+.main-header {
     text-align: center;
+}
+
+.main-header h1 {
+    font-size: 40px;
+}
+
+.work h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.work-image {
+    position: relative;
+    display: inline-block;
+}
+
+.work-image img {
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+.work-mask {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0%;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+.work-mask:hover {
+    display: block;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.services div {
+    margin: 0 50px;
 }
