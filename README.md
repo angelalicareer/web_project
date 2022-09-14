@@ -1,38 +1,38 @@
 # web_project
-Tddddd
+This is a personal portfolio---web designer and graphic designer studio.
 
 ## :computer: [click here](https://glacial-journey-81282.herokuapp.com/) to see my live project!
 
-## :page_facing_up: About
-- How to use my awesome project.
-- Download instructions (if relevant):
-```zsh
-$ git clone my-awesome-app
-$ cd my-awesome-app
-$ node app.js
-```
-- Add in-app screenshots.
+## :page_facing_up: 
+- This website is about my personal studio of web and graphic design.
+- The clients can use the website to access the projects we are working on. 
+- The clients can sign up then log in to the website and they can make new or update requirements for the projects.
+
 
 ## :pencil2: Planning & Problem Solving
-- Talk about approach to the problem.
-- Add screenshots/drawings of doodles/plans during the planning phase.
-- Flow charts of app logic.
+- Design a website showing my profile and projects I have done.
+- Design a website with CRUD.
+- Critical thinking about the user login and sign up to an account and update their requirements.
+- Design website layout.
+- Create database and tables.
+- This is my wireframe photo.
 <img width="419" alt="Screenshot 2022-09-14 092504" src="https://user-images.githubusercontent.com/110880945/190031863-136d39b9-1719-4b37-a3fe-0f1c92d40ffd.png">
 
 
 ## :rocket: Cool tech
-- Programming languages
-- Libraries
+- HTML, CSS, RUBY, SQL
 - Animations
-- Anything else you'd be proud to show your parents
+- Sinatra
+- Heroku
 
 ## :scream: Bugs to fix :poop:
-- Anything a little broken
-- Anything a LOT broken
-- Buttons to not click too many times (cause its broken :unamused:)
+- The photos were not responsive.
+- The clients' requirements were not updated.
 
 ## :sob: Lessons learnt
-What I would do differently if I could wind back the clock...
+I designed the layout but didn't follow the initial one. I should follow the iniatial design, making sure not go too far.
 
 ## :white_check_mark: Future features
-Cool things I would add if I can keep working on this
+-The image will scroll.
+-More detail about the projects I have done.
+
