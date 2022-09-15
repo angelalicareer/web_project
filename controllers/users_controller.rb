@@ -1,7 +1,8 @@
 require './models/user'
 
 get '/users/user_welcome' do
-    if session['user_id']
+    p session['user_id']
+    if session['user_id'] != nil
         redirect "/users/#{session['user_id']}"
     else
         erb :'/sessions/user_welcome'
@@ -60,4 +61,9 @@ end
 get '/requirements/:id/delete' do
     delete_requirement(params['id'])
     redirect "/users/#{session['user_id']}"
+end
+
+get '/session/logout' do
+    session['user_id'] = nil
+    redirect '/users/user_welcome'
 end
