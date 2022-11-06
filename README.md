@@ -1,5 +1,5 @@
 # web_project
-This is a personal portfolio---web designer and graphic designer studio.
+This is a website where clients can order web designs or graphic designs. clients can also have their own accounts which can take an order or submit the comments on the projects/leave messages. 
 
 ## :computer: [click here](https://glacial-journey-81282.herokuapp.com/) to see my live project!
 
